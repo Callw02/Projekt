@@ -1,0 +1,66 @@
+@font-face{
+    font-family: "bungee shade";
+    src: url("BungeeShade-Regular.ttf");
+    font-family: "barlow condensed";
+    src: url("BarlowCondensed-Regular.ttf");
+}
+body{
+    margin: 0;
+    height: 100vh;
+
+}
+body > div{
+    background-image: url("media/kent-omslag.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    
+}
+body > div > div{
+    height: auto;
+    width: 90vw;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 10vh auto;
+    border-radius: 20px;
+}
+header{
+    font-family: "bungee shade";
+    padding-left: 1vw;
+    margin-top: 3vh;
+    font-size: 40px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-family: "barlow condensed";
+    
+    
+}
+nav > div{
+    display: flex;
+    justify-content: center;
+    border: 0px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    height: 70px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    font-size: 35px;
+    font-weight:lighter;
+    color: rgb(54, 53, 53);
+}
+nav > div:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.marked{
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, .75);
+    font-weight: 900;
+}
+.marked:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
