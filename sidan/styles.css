@@ -3,18 +3,26 @@
     src: url("BungeeShade-Regular.ttf");
     font-family: "barlow condensed";
     src: url("BarlowCondensed-Regular.ttf");
+    font-family: "bungee outline";
+    src: url("BungeeOutline-Regular.ttf");
 }
 body{
     margin: 0;
-    height: 100vh;
-
-}
-body > div{
+    padding: 0;
+    box-sizing: border-box;
     background-image: url("media/kent-omslag.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
+ 
+}
+body > div{
+    
+    height: 100%;
+    width: 100%;
+    
     
 }
 body > div > div{
@@ -26,7 +34,7 @@ body > div > div{
 }
 header{
     font-family: "bungee shade";
-    padding-left: 1vw;
+    padding-left: 2vw;
     margin-top: 3vh;
     font-size: 40px;
     color: white;
@@ -35,7 +43,8 @@ nav{
     display: flex;
     justify-content: center;
     font-family: "barlow condensed";
-    
+    width: 86vw;
+    margin: 0 auto;
     
 }
 nav > div{
@@ -45,7 +54,7 @@ nav > div{
     border-radius: 10px;
     margin: 2px;
     height: 70px;
-    width: 320px;
+    width: 86vw;
     background-color: rgba(255, 255, 255, 0.5);
     align-items: center;
     font-size: 35px;
@@ -63,4 +72,163 @@ nav > div:hover{
 }
 .marked:hover{
     background-color: rgba(255, 255, 255, 0.5);
+}
+.best{
+    
+    width: 86vw;
+    background-color: rgba(128, 128, 128, 0.6);
+    margin: 10vh 2vw;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+ article{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+article > div > div > h1{
+    font-family: "bungee outline";
+    margin: 1vw;
+    grid-column: span 3;
+    grid-row: span 3;
+    font-size: 5vh;
+    color: white;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+article > div > div > h2{
+    font-family: "barlow condensed";
+    margin: 1vw;
+    margin-left: 0;
+    font-weight: 900;
+    color: white;
+}
+
+.show_hover{
+    background-color: gray;
+}
+.album_data{
+    grid-column: 1 / span 3;
+    margin: 1vw;
+    grid-row: 1 / span 2;
+}
+.cover{
+    grid-column: 4 / span 2;
+    grid-row: 1 ;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    
+}
+img{
+    width: 100%;
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+}
+.song_list{
+display: flex;
+justify-self: end;
+grid-row: 2;
+grid-column: 4 / span 5;
+}
+.song_list :nth-child(2){
+    border-radius: 0px 0px 30px 0px;
+    margin-left: 1vw;
+}
+#are_you_experienced > .song_list > div{
+    background-color: #dedbd9;
+    margin-right: 1vw;
+    width: 15.7vw;
+    height: 30vh;
+}
+ul{
+    padding-left: 1vw;
+}
+
+.anecdotes{
+    grid-row: 3;
+    grid-column: 1 / span 5;
+    margin-right: 2vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+    height: 40vh;
+}
+.top_right_90{
+    background-color: #4e525b;
+    color:#dedbd9;
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    border-radius: 30px 0px 30px 30px;
+    padding: 1vw;
+    font-family: "barlow condensed";
+    font-size: 1.5vw;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.empty{
+    
+    grid-row: 1 / span 3;
+    grid-column: 2;
+    
+}
+.two_wide{
+    background-color: #4e525b;
+    color:#dedbd9;
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 2;
+    border-radius: 30px 30px 30px 0px;
+    padding: 1vw;
+    font-family: "barlow condensed";
+    font-size: 1.5vw;
+    align-items: center;
+    display: flex;
+}
+.tablet_empty{
+    display: none;
+}
+.phone_empty{
+    display: none;
+}
+.image{
+    background-image: url("media/white_tiger_2.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    grid-row: 1 / span 3;
+    grid-column: 5;
+    border-radius: 0px 30px 30px 30px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    color: #dedbd9;
+    padding: 1vw;
+    font-family: "barlow condensed";
+    font-size: 1.5vw;
+    align-items: flex-end;
+    display: flex;
+}
+.bottom_right_90{
+    background-color: #4e525b;
+    color:#dedbd9;
+    grid-row: 1 / span 3;
+    grid-column: 6;
+    border-radius: 30px 30px 0px 30px;
+    padding: 1vw;
+    font-family: "barlow condensed";
+    font-size: 1.5vw;
+    align-items: center;
+    display: flex;
+}
+.song_list  li{
+    list-style-type: decimal;
+    font-family: "barlow condensed";
+    
+}
+.song_list div{
+    border-radius: 0px 0px 0px 30px;
+}
+.song_list h2{
+    margin-left: 1vw;
 }
